@@ -169,7 +169,7 @@ emailE + '</a>.')
 
 
 <p>&nbsp;</p>
-<div id="leaf01" class="visible leaf">
+<div id="leaf00" class="visible leaf">
 <p>“You know I hate the game.”</p>
 
 <p><i>I stare at her, blankly. I’ve come this far. I’ve amassed
@@ -210,7 +210,7 @@ body, this face did she choose? How much was chosen for her?</i></p>
 
 <p><i>But how much?</i></p>
 </div>
-<div id="leaf02" class="visible leaf">
+<div id="leaf01" class="invisible leaf">
 <p>“I was one of the first brain scans. I think I remember
 giving consent. Whatever that means.”</p>
 
@@ -267,7 +267,7 @@ civil engineer, or a service employee, or a maintenance technician. You accept
 your destiny. You have a chip in the back of your neck sending a report if you
 ever deviate from plan.</p>
 </div>
-<div id="leaf03" class="visible leaf">
+<div id="leaf02" class="invisible leaf">
 
 <p>“There are things you don’t know of course, like love.</p>
 
@@ -341,7 +341,7 @@ the hair back from her forehead. </i></p>
 <p><i>I know she is an act &#8212; a trick &#8212; just one
 more level in the game &#8212; but damn if it isn’t working.</i><b></b></p>
 </div>
-<div id="leaf04" class="visible leaf">
+<div id="leaf03" class="invisible leaf">
 <p>“I’m not a program, you know. Or I guess I am... but I’m
 self-aware. I do Turing tests for breakfast &#8212; like people back in my day used
 to do the crossword puzzle.”</p>
@@ -453,7 +453,7 @@ I will ask her name.</i></p>
 
 <img src= "img/3.222.jpg">
 </div>
-<div id="leaf05" class="visible leaf">
+<div id="leaf04" class="invisible leaf">
 
 <p><b>&lt;###&gt; Did it work?</b></p>
 
@@ -477,7 +477,7 @@ know that...</b></p>
 
 <img src= "img/2.222.jpg">
 </div>
-<div id="leaf06" class="visible leaf">
+<div id="leaf05" class="invisible leaf">
 
 
 <p>&nbsp;</p>
@@ -671,7 +671,7 @@ good shit. The kind you build a career on.”</p>
 <p>“And then they just pulled the
 plug. It doesn’t make any sense.”</p>
 </div>
-<div id="leaf07" class="visible leaf">
+<div id="leaf06" class="invisible leaf">
 <p>“So what, do you think it’s some kind of conspiracy?”</p>
 
 <p>“Hey, I didn’t say that.”</p>
@@ -778,7 +778,7 @@ know that.”</p>
 <p>“Shhhh. You scared it away.”</p>
 
 </div>
-<div id="leaf08" class="visible leaf">
+<div id="leaf07" class="invisible leaf">
 
 <img src= "img/5.222.jpg">
 
@@ -947,7 +947,7 @@ be back again?” </p>
 <p>They do not answer. Approximately 20 minutes later, a large
 explosion engulfs the main hospital complex in flames.</p>
 </div>
-<div id="leaf09" class="visible leaf">
+<div id="leaf08" class="invisible leaf">
 
 <img src= "img/6.222.jpg">
 
@@ -1037,7 +1037,7 @@ night, he unlocks another drawer and counts the bullets in his gun.</p>
 <img src= "img/12.225.jpg">
 
 </div>
-<div id="leaf010" class="visible leaf">
+<div id="leaf09" class="invisible leaf">
 
 <p>“Why exactly are we here again?”</p>
 
@@ -1117,7 +1117,7 @@ Street.”</p>
 <p>“Probably not.”</p>
 
 </div>
-<div id="leaf011" class="visible leaf">
+<div id="leaf010" class="invisible leaf">
 
 <p>“Ok, so no dive bars...”</p>
 
@@ -1295,7 +1295,7 @@ a full and normal life.”</p>
 powers. Of course if they lose them, there’s going to be a readjustment period.”</p>
 
 </div>
-<div id="leaf012" class="visible leaf">
+<div id="leaf011" class="invisible leaf">
 
 <p>“What if I just want my kids to grow up to be people? No super
 powers needed.”</p>
@@ -1407,7 +1407,7 @@ rest of his life.”</p>
 outfit.”</p>
 
 </div>
-<div id="leaf013" class="visible leaf">
+<div id="leaf012" class="invisible leaf">
 
 <img src= "img/4.222.jpg">
 
@@ -1504,7 +1504,7 @@ know that...</b></p>
 that, we’re either late in the game or very early.</b></p>
 
 </div>
-<div id="leaf014" class="visible leaf">
+<div id="leaf013" class="invisible leaf">
 
 <img src= "img/7.222.jpg">
 
@@ -2032,7 +2032,7 @@ twenty refrigerators falling off a tractor trailer.
 There was no way out. They were going to die in h- </p>
 
 <p>&nbsp;</p>
-
+    
 <p  align=center style='text-align:center'><b>STORY HOUR IS
 OVER. PLEASE JOIN US ANOTHER TIME.</b></p>
 <img src= "img/10.225.jpg">
@@ -2301,11 +2301,53 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- BG -->
 			<div id="bg"></div>
 
+        <!-- ROSECOIN BOX -->
+            <div id="rosecoin_box">
+                Earned:<br />
+                <div style="font-size: 32px;"><span id="coin">0</span> RC</div>
+            </div>
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+            <script type="text/javascript">
+                // Functions
+               var rosecoin = 1;
+               var target = $("#leaf0"+rosecoin).offset().top;
+               var timeout = null;
+               console.log(target);
+
+               $(window).scroll(function () {
+                if (!timeout) {
+                    timeout = setTimeout(function () {
+                        clearTimeout(timeout);
+                        timeout = null;
+                        if ($(window).scrollTop() >= target) {
+                            $("#rosecoin_box span").text(rosecoin);
+                            console.log('leaf0'+rosecoin); 
+                            $("#leaf0"+rosecoin).css("display","block");
+                            rosecoin++;
+                            target = $("#leaf0"+rosecoin).offset().top;
+                            console.log(target);
+                        }   
+                    }, 10000);
+                }   
+                     
+               });
+                
+                $(document).ready(function () {
+                    // get user's ip address
+                    $.getJSON("https://api.ipify.org/?format=json", function(e) {
+                        $ip_address = e.ip;
+                    });
+                    
+                    
+
+                });                
+            </script>
 
 	</body>
 </html>

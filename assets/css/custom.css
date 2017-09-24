@@ -1,0 +1,11 @@
+#rosecoin_box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    background-color: #333;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
