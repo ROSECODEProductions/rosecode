@@ -209,6 +209,8 @@ body, this face did she choose? How much was chosen for her?</i></p>
 <p>“I had no family. No man. No one to speak for me.”</p>
 
 <p><i>But how much?</i></p>
+    
+<p id="click01" class="click">Next ></p>
 </div>
 <div id="leaf01" class="invisible leaf">
 <p>“I was one of the first brain scans. I think I remember
@@ -266,6 +268,8 @@ bath confirms it. You know whether you will be a
 civil engineer, or a service employee, or a maintenance technician. You accept
 your destiny. You have a chip in the back of your neck sending a report if you
 ever deviate from plan.</p>
+    
+<p id="click02" class="click">Next ></p>
 </div>
 <div id="leaf02" class="invisible leaf">
 
@@ -340,6 +344,8 @@ the hair back from her forehead. </i></p>
 
 <p><i>I know she is an act &#8212; a trick &#8212; just one
 more level in the game &#8212; but damn if it isn’t working.</i><b></b></p>
+    
+<p id="click03" class="click">Next ></p>
 </div>
 <div id="leaf03" class="invisible leaf">
 <p>“I’m not a program, you know. Or I guess I am... but I’m
@@ -452,6 +458,7 @@ I will ask her name.</i></p>
 
 
 <img src= "img/3.222.jpg">
+<p id="click04" class="click">Next ></p>
 </div>
 <div id="leaf04" class="invisible leaf">
 
@@ -476,6 +483,7 @@ know that...</b></p>
 
 
 <img src= "img/2.222.jpg">
+<p id="click05" class="click">Next ></p>
 </div>
 <div id="leaf05" class="invisible leaf">
 
@@ -670,6 +678,8 @@ good shit. The kind you build a career on.”</p>
 
 <p>“And then they just pulled the
 plug. It doesn’t make any sense.”</p>
+    
+<p id="click06" class="click">Next ></p>
 </div>
 <div id="leaf06" class="invisible leaf">
 <p>“So what, do you think it’s some kind of conspiracy?”</p>
@@ -777,6 +787,7 @@ know that.”</p>
 
 <p>“Shhhh. You scared it away.”</p>
 
+<p id="click07" class="click">Next ></p>
 </div>
 <div id="leaf07" class="invisible leaf">
 
@@ -946,6 +957,8 @@ be back again?” </p>
 
 <p>They do not answer. Approximately 20 minutes later, a large
 explosion engulfs the main hospital complex in flames.</p>
+    
+<p id="click08" class="click">Next ></p>
 </div>
 <div id="leaf08" class="invisible leaf">
 
@@ -1036,6 +1049,7 @@ night, he unlocks another drawer and counts the bullets in his gun.</p>
 
 <img src= "img/12.225.jpg">
 
+<p id="click09" class="click">Next ></p>
 </div>
 <div id="leaf09" class="invisible leaf">
 
@@ -1116,6 +1130,7 @@ Street.”</p>
 
 <p>“Probably not.”</p>
 
+<p id="click010" class="click">Next ></p>
 </div>
 <div id="leaf010" class="invisible leaf">
 
@@ -1294,6 +1309,7 @@ a full and normal life.”</p>
 <p>“We’re talking about giving your kids essentially super
 powers. Of course if they lose them, there’s going to be a readjustment period.”</p>
 
+<p id="click011" class="click">Next ></p>
 </div>
 <div id="leaf011" class="invisible leaf">
 
@@ -1406,6 +1422,7 @@ rest of his life.”</p>
 <p>“Thank you, my dear. I adore your
 outfit.”</p>
 
+<p id="click012" class="click">Next ></p>
 </div>
 <div id="leaf012" class="invisible leaf">
 
@@ -1503,6 +1520,7 @@ know that...</b></p>
 <p><b>&lt;U+1F339&gt; If you don’t know
 that, we’re either late in the game or very early.</b></p>
 
+<p id="click013" class="click">Next ></p>
 </div>
 <div id="leaf013" class="invisible leaf">
 
@@ -2316,26 +2334,37 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
             <script type="text/javascript">
                 // Functions
                var rosecoin = 1;
-               var target = $("#leaf0"+rosecoin).offset().top;
+               var leaf_number = 1;
+               var target = $("#leaf0"+leaf_number).offset().top;
                var timeout = null;
+               var timeout2 = null;
                console.log(target);
 
                $(window).scroll(function () {
-                if (!timeout) {
-                    timeout = setTimeout(function () {
-                        clearTimeout(timeout);
-                        timeout = null;
-                        if ($(window).scrollTop() >= target) {
-                            $("#rosecoin_box span").text(rosecoin);
-                            console.log('leaf0'+rosecoin); 
-                            $("#leaf0"+rosecoin).css("display","block");
-                            rosecoin++;
-                            target = $("#leaf0"+rosecoin).offset().top;
-                            console.log(target);
-                        }   
-                    }, 10000);
-                }   
-                     
+                   if ($(window).scrollTop() >= target) {
+                       $("#click0"+leaf_number).click(function(){
+                            $("#leaf0"+leaf_number).css("display","block");
+                            if (!timeout) {
+                                timeout = setTimeout(function () {
+                                    clearTimeout(timeout);
+                                    timeout = null;
+                                     
+                                    target = $("#leaf0"+leaf_number).offset().top;
+                                    leaf_number++;
+                                    console.log(target);
+                                }, 250);
+                            } 
+                       });
+                       if(!timeout2) {
+                                        timeout2 = setTimeout(function () {
+                                            clearTimeout(timeout2);
+                                            timeout2 = null;
+                                            $("#rosecoin_box span").text(rosecoin);
+                                            console.log('leaf0'+rosecoin); 
+                                            rosecoin++;
+                                        }, 10000);
+                        }
+                    }
                });
                 
                 $(document).ready(function () {
