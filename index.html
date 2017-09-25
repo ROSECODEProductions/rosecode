@@ -2322,7 +2322,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
         <!-- ROSECOIN BOX -->
             <div id="rosecoin_box">
                 Earned:<br />
-                <div style="font-size: 32px;"><span id="coin">0</span> RC</div>
+                <div style="font-size: 32px;"><span id="coin">1</span> RC</div>
             </div>
 
 		<!-- Scripts -->
@@ -2333,7 +2333,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
             <script type="text/javascript">
                 // Functions
-               var rosecoin = 1;
+               var rosecoin = 2;
                var leaf_number = 1;
                var target = $("#leaf0"+leaf_number).offset().top;
                var timeout = null;
@@ -2351,19 +2351,21 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
                                      
                                     target = $("#leaf0"+leaf_number).offset().top;
                                     leaf_number++;
-                                    console.log(target);
+                                    console.log('leaf0'+leaf_number);
                                 }, 250);
-                            } 
+                            }
+                            if(!timeout2) {
+                                timeout2 = setTimeout(function () {
+                                    clearTimeout(timeout2);
+                                    timeout2 = null;
+                                    $("#rosecoin_box span").text(rosecoin);
+                                    console.log('RC '+rosecoin); 
+                                    rosecoin++;
+                                }, 10000);
+                            }   
+                           
                        });
-                       if(!timeout2) {
-                                        timeout2 = setTimeout(function () {
-                                            clearTimeout(timeout2);
-                                            timeout2 = null;
-                                            $("#rosecoin_box span").text(rosecoin);
-                                            console.log('leaf0'+rosecoin); 
-                                            rosecoin++;
-                                        }, 10000);
-                        }
+                       
                     }
                });
                 
