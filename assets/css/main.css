@@ -1,5 +1,4 @@
 @import url(font-awesome.min.css);
-@import url(custom.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
 /*
@@ -55,6 +54,7 @@
 		margin-bottom:6rem;
 	}
 
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -63,11 +63,14 @@
 		box-sizing: border-box;
 	}
 
+
+
 /* Counter */
 	
-	div.invisible {display: none;}
+	div.invisible, span.invisible {display: none;}
 
-	div.visible {display: block;}
+	div.visible, span.visible {display: block;}
+
 
 /* Basic */
 
@@ -155,7 +158,7 @@
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #c48f7f;
 		font-weight: 600;
 		opacity: .8;
 	}
@@ -1368,6 +1371,27 @@
 				opacity: 0;
 			}
 
+		
+/** 
+ * iPad with portrait orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait){
+#bg  {
+    height: 936px; background-size: 1736px 1024px; 
+
+  }
+}
+
+/** 
+ * iPad with landscape orientation.
+ */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape){
+#bg {
+    height: 638px; background-size: 1152px 768px;
+  }
+}
+	
+
 		@media screen and (max-width: 980px) {
 
 			#header .content p br {
@@ -1569,6 +1593,16 @@
 			}
 
 		}
+
+
+/* Story */
+
+	.chat p, span, strong, b, div {
+		color:#ffffff; 		
+	}
+
+
+
 
 /* Footer */
 
