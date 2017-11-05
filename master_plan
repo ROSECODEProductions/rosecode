@@ -1,0 +1,25 @@
+The goal for ROSECODE is to have the reader discover new extensions of the ROSECODE story each time they load the game.
+Currently there are seven story fragments for a total of about 100 pages of text, each containing a different sequence of plot points. 
+
+
+
+Plot points follow:
+SPOILERS
+
+
+- The AI Harriet awakens as a clone in 23rd Century Paris and prepares for a secret rendezvous.
+- Tim and The Girl meet for the first time.
+- A documentary filmmaker has the plug pulled on his project for mysterious reasons.
+- We meet Courtney, future pilot of the Liberté starship, at a very young age.
+- Tim meets the Copper Man and learns why his consciousness was uploaded to the web.
+- The origin of the Consensus is (somewhat) explained.
+- Tim and The Girl/Zebra spend time getting to know each other in a cartoon dungeon and a variety of other simulated realities.
+
+
+I could say more about how this will be implemented, but that might ruin the surprise. Suffice it to say, if anyone has 
+experience w/AWS Lambda and wants to get a Python script running in that environment that has already been written and works, we 
+could really use the expertise.
+
+We also have an API Gateway ready to go for a ROSECOIN fountain pegged to a JWT representing CoinHive token. Essentially, it's a way
+to give something something back to users for consenting to mine Monero on their client machines. Value of RSC is not initially expected
+to be high, but that will change when users learn they can redeem their RSC for custom swag. (T-shirt and hoodie pages must also be added.)
