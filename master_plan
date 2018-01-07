@@ -19,7 +19,3 @@ SPOILERS
 I could say more about how this will be implemented, but that might ruin the surprise. Suffice it to say, if anyone has 
 experience w/AWS Lambda and wants to get a Python script running in that environment that has already been written and works, we 
 could really use the expertise.
-
-We also have an API Gateway ready to go for a ROSECOIN fountain pegged to a JWT representing CoinHive token. Essentially, it's a way
-to give something something back to users for consenting to mine Monero on their client machines. Value of RSC is not initially expected
-to be high, but that will change when users learn they can redeem their RSC for custom swag. (T-shirt and hoodie pages must also be added.)
