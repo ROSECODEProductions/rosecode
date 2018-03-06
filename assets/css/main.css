@@ -64,12 +64,34 @@
 	}
 
 
-
 /* Counter */
 	
 	div.invisible, span.invisible {display: none;}
 
 	div.visible, span.visible {display: block;}
+
+
+/* Blinking Start button */
+
+	div.begin 
+	{background-color: transparent;
+	animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: 8;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+/* Standard syntax */
+@keyframes example {
+	from {background-color: transparent;}
+	to {background-color:#ccc; opacity:.8;}
+    /* 0%   {background-color:transparent;}
+    25%  {background-color:#5c8195; opacity:.6;}
+    50%  {background-color:#945c5e; opacity:.6;} 
+    50%  {background-color:#ccc; opacity:.6;}
+    100% {background-color:transparent;} */
+}
 
 
 /* Basic */
