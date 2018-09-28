@@ -623,7 +623,11 @@ var skel=function(){"use strict";var t={breakpointIds:null,events:{},isInit:!1,o
 			$main_articles = $main.children('article');
 
 		// Disable animations/transitions until the page has loaded.
+<<<<<<< HEAD
 			// $body.addClass('is-loading');
+=======
+			$body.addClass('is-loading');
+>>>>>>> 28d42911f50d13988e25a07462211c5968dd41c3
 
 			$window.on('load', function() {
 				window.setTimeout(function() {
