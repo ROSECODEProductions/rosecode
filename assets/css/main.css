@@ -1,9 +1,5 @@
 @import url(font-awesome.min.css);
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
-=======
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
->>>>>>> 28d42911f50d13988e25a07462211c5968dd41c3
 
 /*
 	Dimension by HTML5 UP
@@ -67,7 +63,6 @@
 		box-sizing: border-box;
 	}
 
-<<<<<<< HEAD
 /* White Box */
 
 	
@@ -79,8 +74,6 @@
 			width: 45rem !important;
 		}
 
-=======
->>>>>>> 28d42911f50d13988e25a07462211c5968dd41c3
 
 /* Counter */
 	
@@ -103,7 +96,6 @@
 	}
 
 
-<<<<<<< HEAD
 /* CSS Animations */
 
 div.hue{
@@ -132,15 +124,6 @@ div.begin {
 	animation-name: example;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-=======
-/* Blinking Start button */
-
-	div.begin 
-	{background-color: transparent;
-	animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: 8;
->>>>>>> 28d42911f50d13988e25a07462211c5968dd41c3
     animation-direction: alternate;
     animation-timing-function: ease-in;
 }
@@ -223,11 +206,7 @@ div.begin {
 	body, input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", sans-serif;
-<<<<<<< HEAD
 		font-weight: 100;
-=======
-		font-weight: 300;
->>>>>>> 28d42911f50d13988e25a07462211c5968dd41c3
 		font-size: 1rem;
 		line-height: 1.65;
 	}
@@ -247,22 +226,13 @@ div.begin {
 		}
 
 	strong, b {
-<<<<<<< HEAD
 		opacity: .8;
 		font-weight: 600;
-=======
-		color: #ffffff;
-		font-weight: 600;
-		opacity: .8;
->>>>>>> 28d42911f50d13988e25a07462211c5968dd41c3
 	}
 
 	em, i {
 		font-style: italic;
-<<<<<<< HEAD
 
-=======
->>>>>>> 28d42911f50d13988e25a07462211c5968dd41c3
 	}
 
 	p {
@@ -270,10 +240,6 @@ div.begin {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-<<<<<<< HEAD
-=======
-		color: #ffffff;
->>>>>>> 28d42911f50d13988e25a07462211c5968dd41c3
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -1418,10 +1384,7 @@ div.begin {
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
 				line-height: 2;
-<<<<<<< HEAD
 				font-weight:400;
-=======
->>>>>>> 28d42911f50d13988e25a07462211c5968dd41c3
 			}
 
 		#header nav ul {
@@ -1659,10 +1622,7 @@ div.begin {
 				text-indent: 4rem;
 				overflow: hidden;
 				white-space: nowrap;
-<<<<<<< HEAD
 				mix-blend-mode: difference;
-=======
->>>>>>> 28d42911f50d13988e25a07462211c5968dd41c3
 			}
 
 				#main article .close:before {
