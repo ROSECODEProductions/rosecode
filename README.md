@@ -9,5 +9,7 @@
 	<a xmlns:cc="http://creativecommons.org/ns#" href="https://www.justrose.org" rel="cc:morePermissions">
 	https://www.justrose.org</a>. 
 	
+  Join the Slack channel at https://join.slack.com/t/rosecode/shared_invite/enQtNDMyODM4MDQxNDc3LTlhYWQ5NmIxNDQwMzg5MmMwMTU5YzA0N2JkOTU1OTQ0Nzc5Nzk3NmY1YWQ3MmRhMmM1NzIzM2QyZTZhNDE0ODQ
+  
   HTML theme adapted from Dimension by HTML5 UP
 	html5up.net | @ajlkn
