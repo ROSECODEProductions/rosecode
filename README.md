@@ -3,7 +3,7 @@
   
   https://cryptpad.fr/drive/#/2/drive/view/VhtsO2uMTlvCDdETDC87qoj90XUfUmTtz11xsVuA1GY/
   
-  Public client-side source code for rosecode.io
+  Public client-side source code for rosecode.io:
   
   ROSECODE - Source Code & Story - is licensed under a 
 	<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
