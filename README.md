@@ -1,5 +1,5 @@
 # rosecode
-  Excuse the appearance of our main site! We are in the process of switching hosts and anticipate a few days of downtime. In the meantime, new material (protected by copyright and not yet licensed) is available for advance viewing with the author's permission at: 
+Excuse the appearance of our main site! We are in the process of switching hosts and anticipate a few days of downtime. In the meantime, new material (protected by copyright and not yet licensed) is available for advance viewing with the author's permission at: 
   
   https://cryptpad.fr/drive/#/2/drive/view/VhtsO2uMTlvCDdETDC87qoj90XUfUmTtz11xsVuA1GY/
   
