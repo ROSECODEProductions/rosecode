@@ -1,6 +1,8 @@
 # rosecode
   
-  Additional material is available for advance reading. Just ask if you would like a link!
+  Additional material is available for advance reading. Just ask and I'll send you the files. 
+
+  Please note that this is not currently an active project. Further thoughts as to why at https://artmeetscode.com/2025/08/22/current-concerns-about-contributor-safety/
   
   Public client-side source code for rosecode.io:
   
